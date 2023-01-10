@@ -1,0 +1,9 @@
+Shap values show how much a given feature changed our prediction (compared to if we made that prediction at some baseline value of that feature).
+
+For example, consider an ultra-simple model:
+y=4∗x1+2∗x2
+ 
+If  x1  takes the value 2, instead of a baseline value of 0, then our SHAP value for  x1  would be 8 (from 4 times 2).
+
+These are harder to calculate with the sophisticated models we use in practice. But through some algorithmic cleverness, Shap values allow us to decompose any prediction into the sum of effects of each feature value, yielding a graph like this:
+
